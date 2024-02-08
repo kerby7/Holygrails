@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-family: 'Lato' , sans-serif;
+}
+
+/* Navigation bar */
+.navbar{
+  background-color: #111;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px auto;
+}
+
+.logo h1{
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nav-items{
+  height: 10vh;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-items a{
+  color: azure;
+  text-decoration: none;
+}
+
+.nav-items a:hover{
+  transition: 0.5s all linear;
+  color: #0B60B0;
+}
+.nav-components{
+  height: 10vh;
+  width: 20vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-components a{
+  color: #F4EAE0;
+  text-decoration: none;
+}
+
+.coming-soon{
+  position: relative;
+  left: 2rem;
+}
+
+/* New Arrivals */
+.new-arrivals{
+  background: url("images/oleg-laptev-7jQh3EiS8Bs-unsplash.jpg");
+}
+
+.slider-wrapper{
+   display: flex;
+   width: 500vw;
+   height: 90vh;
+   transition: all 1s ease-in-out;
+}
+.sliderImage{
+  position: absolute;
+  left: 20rem;
+}
+
+.slider-item{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sliderTitle{
+  position: absolute;
+  top: 14%;
+  right: 5%;
+}
+.slider-text{
+  height: 20vh;
+  width: 30vw;
+  
+  position: absolute;
+  top: 20%;
+  right: 4%;
+}
+.btn-buy{
+  height: 5vh;
+  width: 9vw;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.btn-buy:hover{
+  transition: 0.2s all linear;
+  background-color: #fff;
+  color: #111;
+}
+/* About us */
+.about{
+  height: 30vh;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  background-color: #dfded3;
+  color: #111;
+}
+
+.about-h1{
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 1.4rem;
+}
+
+.about-p{
+  font-size: 1.4rem;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.part-2{
+  padding-left: 47px;
+}
+/* Features */
+.features{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #dfded3;
+}
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.featureIcon{
+  width: 50px;
+  height: 50px;
+}
+
+.featureTitle{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+.featureDesc{
+  color: gray;
+  width: 50%;
+}
+
+/* Products styling */
+.product{
+  height: 100vh;
+  position: relative;
+  background-color:#DFD7BF;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100% );
+}
+
+.product-image{
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.product-details{
+  position: absolute;
+  top: 12%;
+  right: 0;
+  width: 40%;
+  padding: 5rem;
+}
+
+.product-title{
+  font-size: 2.8rem;
+  padding-bottom: 1rem;
+}
+
+.product-price{
+  font-size: 2rem;
+  color: #111;
+  padding-bottom: 1rem;
+}
+
+.product-p{
+  padding-bottom: 1rem;
+}
+
+.product-options, .product-size{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.option{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 5px;
+  background-color: blue;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.option:last-child{
+  background-color: red;
+}
+
+.size{
+  height: 2rem;
+  width: 4rem;
+
+  background-color: whitesmoke;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 200;
+  border: 0.5px solid black;
+}
+
+.product-buy{
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #111;
+  font-weight: 200;
+  cursor: pointer;
+  border: 0.5px solid black;
+  transition: all 0.3s ease-in;
+}
+
+.product-buy:hover{
+  background-color: #111;
+  color: #fff;
+}
+
+.button-click{
+  border: 2px solid black;
+}

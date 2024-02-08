@@ -1,0 +1,23 @@
+/* Breakpoints 
+1. >1500px
+2. 800-1500px
+3. 500-800px
+4. < 400px*/
+
+
+
+@media screen and (max-width:400px) {
+  .about{
+    height: 70vh;
+    width: 100%;
+  }
+  .about-h1{
+    font-size: 2rem;
+  }
+  .features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  } 
+}
