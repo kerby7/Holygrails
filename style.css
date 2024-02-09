@@ -1,16 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
-  font-family: 'Lato' , sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* Navigation bar */
-.navbar{
+.navbar {
   background-color: #111;
   height: 10vh;
   width: 100%;
@@ -20,13 +20,13 @@ html{
   padding: 30px auto;
 }
 
-.logo h1{
+.logo h1 {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
 }
 
-.nav-items{
+.nav-items {
   height: 10vh;
   width: 50vw;
   display: flex;
@@ -34,16 +34,16 @@ html{
   align-items: center;
 }
 
-.nav-items a{
+.nav-items a {
   color: azure;
   text-decoration: none;
 }
 
-.nav-items a:hover{
+.nav-items a:hover {
   transition: 0.5s all linear;
-  color: #0B60B0;
+  color: #0b60b0;
 }
-.nav-components{
+.nav-components {
   height: 10vh;
   width: 20vw;
   display: flex;
@@ -52,33 +52,33 @@ html{
   gap: 1rem;
 }
 
-.nav-components a{
-  color: #F4EAE0;
+.nav-components a {
+  color: #f4eae0;
   text-decoration: none;
 }
 
-.coming-soon{
+.soon {
   position: relative;
   left: 2rem;
 }
 
 /* New Arrivals */
-.new-arrivals{
-  background: url("images/oleg-laptev-7jQh3EiS8Bs-unsplash.jpg");
+.new-arrivals {
+  background: url("images/4880206.jpg");
 }
 
-.slider-wrapper{
-   display: flex;
-   width: 500vw;
-   height: 90vh;
-   transition: all 1s ease-in-out;
+.slider-wrapper {
+  display: flex;
+  width: 500vw;
+  height: 90vh;
+  transition: all 1s ease-in-out;
 }
-.sliderImage{
+.sliderImage {
   position: absolute;
   left: 20rem;
 }
 
-.slider-item{
+.slider-item {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -86,24 +86,24 @@ html{
   position: relative;
 }
 
-.sliderTitle{
+.sliderTitle {
   position: absolute;
   top: 14%;
   right: 5%;
 }
-.slider-text{
+.slider-text {
   height: 20vh;
   width: 30vw;
-  
+
   position: absolute;
   top: 20%;
   right: 4%;
 }
-.btn-buy{
+.btn-buy {
   height: 5vh;
   width: 9vw;
   position: absolute;
-  top: 30%;
+  top: 32%;
   right: 10%;
   font-size: 1.2rem;
   font-weight: 300;
@@ -113,13 +113,208 @@ html{
   cursor: pointer;
 }
 
-.btn-buy:hover{
+.btn-buy:hover {
   transition: 0.2s all linear;
   background-color: #fff;
   color: #111;
 }
+
+/* Coming soon shoes */
+.new-arrivals-h {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2.9rem;
+}
+
+.collection-container {
+  padding: 50px;
+  display: flex;
+  font-weight: 500;
+  height: 80vh;
+}
+
+.collection {
+  flex: 1;
+  padding: 10px;
+}
+
+.collection-image {
+  height: 70vh;
+  width: 30vw;
+}
+
+.collection-desc {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.desc {
+  position: relative;
+  right: 2rem;
+  height: 10vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.desc-h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.desc-p {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+}
+
+.desc-price {
+  font-size: 1.2rem;
+}
+
+/* Products styling and buying */
+.product {
+  height: 100vh;
+  position: relative;
+  background-color: #dfd7bf;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  margin-bottom: 6rem;
+}
+
+.product-image {
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.product-details {
+  position: absolute;
+  top: 12%;
+  right: 0;
+  width: 40%;
+  padding: 5rem;
+}
+
+.product-title {
+  font-size: 2.8rem;
+  padding-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  color: #111;
+  padding-bottom: 1rem;
+}
+
+.product-p {
+  padding-bottom: 1rem;
+}
+
+.product-options,
+.product-size {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.option {
+  height: 2rem;
+  width: 2rem;
+  background-color: blue;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.option:last-child {
+  background-color: red;
+}
+
+.size {
+  height: 2rem;
+  width: 4rem;
+  background-color: whitesmoke;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 200;
+  border: 0.5px solid black;
+}
+
+.product-buy {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #111;
+  font-weight: 500;
+  cursor: pointer;
+  border: 0.5px solid black;
+  transition: all 0.3s ease-in;
+  border-radius: 3px;
+}
+
+.product-buy:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.button-click {
+  border: 2px solid black;
+}
+
+/* Streetwear coming soon section */
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 95vw;
+  margin: 2rem;
+  background: url(images/comingsoon.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coming-soon-h1 {
+  margin: 2rem;
+  font-size: 2.6rem;
+  margin-left: 2rem;
+}
+
+.heading-soon{
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.coming-soon-btn {
+  height: 7vh;
+  width: 9vw;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.coming-soon-btn:hover {
+  background-color: white;
+  color: #111;
+}
+
 /* About us */
-.about{
+.about {
   height: 30vh;
   width: 100%;
   padding: 3rem;
@@ -128,141 +323,121 @@ html{
   align-items: center;
   justify-content: center;
   line-height: 1.5;
-  background-color: #dfded3;
+  background-color: #fff;
   color: #111;
 }
 
-.about-h1{
+.about-h1 {
   font-size: 3rem;
   font-weight: 800;
   padding: 1.4rem;
 }
 
-.about-p{
+.about-p {
   font-size: 1.4rem;
   padding-left: 20px;
   text-align: center;
 }
 
-.part-2{
+.part-2 {
   padding-left: 47px;
 }
+
 /* Features */
-.features{
+.features {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  background-color: #dfded3;
+  background-color: #fff;
 }
 
-.feature{
+.feature {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.featureIcon{
+.featureIcon {
   width: 50px;
   height: 50px;
 }
 
-.featureTitle{
+.featureTitle {
   font-size: 20px;
   font-weight: 600;
   margin: 20px;
 }
-.featureDesc{
+.featureDesc {
   color: gray;
   width: 50%;
 }
 
-/* Products styling */
-.product{
-  height: 100vh;
-  position: relative;
-  background-color:#DFD7BF;
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100% );
-}
+/* Contact section */
 
-.product-image{
-  width: 40%;
-  position: absolute;
-  top: 25%;
-  left: 10%;
-}
-
-.product-details{
-  position: absolute;
-  top: 12%;
-  right: 0;
-  width: 40%;
-  padding: 5rem;
-}
-
-.product-title{
-  font-size: 2.8rem;
-  padding-bottom: 1rem;
-}
-
-.product-price{
-  font-size: 2rem;
-  color: #111;
-  padding-bottom: 1rem;
-}
-
-.product-p{
-  padding-bottom: 1rem;
-}
-
-.product-options, .product-size{
+footer {
   display: flex;
-  margin-bottom: 15px;
+  background-color: #111;
+  height: 50vh;
+  padding: 40px 16px;
 }
 
-.option{
-  height: 2rem;
-  width: 2rem;
-  border-radius: 5px;
-  background-color: blue;
-  margin-right: 10px;
-  cursor: pointer;
+.footer-left{
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.footer-menu-title{
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #4299E1;
 }
 
-.option:last-child{
-  background-color: red;
+.footer-menu-list{
+  padding: 0;
+  list-style: none;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  font-weight: lighter;
+  line-height: 1.6rem;
 }
 
-.size{
-  height: 2rem;
-  width: 4rem;
+.footer-menu-list li{
+  margin-bottom: 1rem;
+}
 
-  background-color: whitesmoke;
-  margin-right: 10px;
-  cursor: pointer;
-  text-align: center;
+.footer-right{
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mail-box-input{
   padding: 5px;
-  font-size: 1rem;
-  font-weight: 200;
-  border: 0.5px solid black;
+  height: 5vh;
+  width: 20vw;
+  margin-right: 1rem;
+  border-radius: 50px;
 }
 
-.product-buy{
-  padding: 10px 20px;
+.mail-button{
+  padding: 5px;
   background-color: #fff;
   color: #111;
-  font-weight: 200;
-  cursor: pointer;
-  border: 0.5px solid black;
-  transition: all 0.3s ease-in;
 }
 
-.product-buy:hover{
-  background-color: #111;
-  color: #fff;
+.social-icons{
+  font-size: 1.4rem;
+  color: #fff; 
+  display: flex;
+  gap: 2rem;
 }
 
-.button-click{
-  border: 2px solid black;
+.copyright-section{
+   color: #fff;
 }
