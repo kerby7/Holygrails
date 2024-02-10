@@ -2,6 +2,7 @@ const wrapper = document.querySelector(".slider-wrapper");
 const items = document.querySelectorAll(".item");
 const sizes = document.querySelectorAll(".size");
 
+
 // Size button active:
 
 // Products array
@@ -135,6 +136,7 @@ productSizes.forEach((size, index) =>{
     size.style.color = "white";
   });
 });
+
 
 
 
