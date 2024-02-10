@@ -6,18 +6,258 @@
 
 
 
-@media screen and (max-width:400px) {
-  .about{
-    height: 70vh;
-    width: 100%;
+@media screen and (max-width:480px) {
+  /* For mobile layout */
+
+  /* Nav component */
+  .logo h1{
+    font-size: 1rem;
   }
+  .nav-items{
+    display: none;
+  }
+  .nav-components{
+    position: relative;
+    left: 3.5rem;
+  }
+  .soon{
+    position: absolute;
+    left: -8rem;
+    font-size: 0.7rem;
+  }
+
+  .about-us-a{
+    display: none;
+  }
+
+  /* Product slider */
+
+  .slider-wrapper{
+    height: 40vh;
+  }
+  .slider-item{
+    display: flex;
+    flex-direction: column;  
+  }
+
+   .sliderImage{
+    display: none;
+  }
+  .responsive-picture{
+     display: block;
+     height: 100px;
+     position: absolute;
+     bottom: 5rem;
+     right: 6rem;
+  }
+  .sliderTitle{
+    font-size: 1.4rem;
+  }
+  .slider-text{
+    font-size: 0.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+  .btn-buy{
+    height: 2vh;
+    width: 7vw;
+    position: absolute;
+    background-color: #fff;
+    right: 2rem;
+    top: 7.5rem;
+    font-size: 0.3rem;
+    color: black;
+  }
+
+  /* Arrivals Section */
+  .collection-h{
+    font-size: 1.5rem;
+  }
+  .collection-container{
+    padding: 10px;
+    display: flex;
+    height: 10vh;
+  }
+  .collection{
+    display: none;
+  }
+  .collection-responsive{
+    display: flex;
+    justify-content: center;
+  }
+  .collection-image-responsive{
+    margin-top: 2rem;
+    height: 40vh;
+  }
+  .collection-desc{
+    display: none;
+  }
+  .desc-responsive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .desc-h2{
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* Product Shopping Section */
+  .buy-responsive{
+    display: block;
+    margin-top: 3rem;
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  .product{
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+  }
+  .product-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    height: 70vh;
+  }
+  .product-image{
+    top: 15%;
+    left: 33%;
+  }
+  .product-title{
+    font-size: 1rem;
+  }
+  .product-price{
+    font-size: 1.4rem;
+  }
+  .product-p{
+    text-align: center;
+  }
+
+  /* Streetwear section */
+  .coming-soon-container{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+
+  }
+
+  .coming-soon-h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -2rem;
+  }
+
+  .coming-soon{
+    background-size: contain;
+    margin: 0.7rem;
+    position: relative;
+  }
+
+  .heading-soon{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .coming-soon-btn{
+    height: 2vh;
+    width: 10vw;
+    border: 1px solid white;
+    font-size: 0.3rem;
+    position: absolute;
+    margin-top: 6rem;
+  }
+
+  /* Features section */
+  .about{
+    height: 50vh;
+  }
+
   .about-h1{
     font-size: 2rem;
+  }
+
+  .about-p{
+    font-size: 1rem;
   }
   .features{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    top: -3rem;
+  }
+  .featureDesc{
+    margin-bottom: 2rem;
+  }
 
-  } 
-}
+
+  /* Footer section */
+  footer{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  .footer-left{
+    gap: 2rem;
+    width: 90%;
+  }
+
+  .footer-menu-title{
+    font-size: 1rem;
+  }
+
+  .footer-menu-list{
+    font-size: 0.5rem;
+  }
+
+  .footer-right{
+    position: absolute;
+    top: 40%;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .footer-menu-title-right{
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .mail-box-input{
+    height: 5vh;
+    width: 70vw;
+    position: relative;
+    left: 1rem;
+  }
+
+  .mail-button{
+     background: none;
+     border: 1px solid white;
+     position: relative;
+     left: 38%;
+     margin-top: 1rem;
+     color: #fff;
+  }
+
+  .social-icons{
+    padding-top: 2.5rem;
+    font-size: 0.7rem;
+  }
+
+  .copyright-section{
+    margin-top: 1rem;
+  }
+
+  .copyright{
+    font-size: 0.5rem;
+  }
+} 
