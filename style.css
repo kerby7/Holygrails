@@ -62,9 +62,14 @@ html {
   left: 2rem;
 }
 
-/* New Arrivals */
-.new-arrivals {
-  background: url("images/4880206.jpg");
+/* Best sellers slider */
+.responsive-picture{
+  height: 150px;
+  display: none;
+}
+
+.product-slider {
+  background: url("images/backgroundi.jpg");
 }
 
 .slider-wrapper {
@@ -75,7 +80,7 @@ html {
 }
 .sliderImage {
   position: absolute;
-  left: 20rem;
+  left: 10rem;
 }
 
 .slider-item {
@@ -88,22 +93,21 @@ html {
 
 .sliderTitle {
   position: absolute;
-  top: 14%;
+  top: 25%;
   right: 5%;
 }
 .slider-text {
   height: 20vh;
   width: 30vw;
-
   position: absolute;
-  top: 20%;
+  top: 31%;
   right: 4%;
 }
 .btn-buy {
   height: 5vh;
   width: 9vw;
   position: absolute;
-  top: 32%;
+  top: 39%;
   right: 10%;
   font-size: 1.2rem;
   font-weight: 300;
@@ -119,8 +123,19 @@ html {
   color: #111;
 }
 
-/* Coming soon shoes */
-.new-arrivals-h {
+/* New arrivals shoes */
+/* Responsive CSS for mobile and mid screens */
+.collection-responsive{
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.desc-responsive{
+  display: none;
+}
+
+/* Regular CSS */
+.collection-h {
   text-align: center;
   margin-top: 3rem;
   font-size: 2.9rem;
@@ -178,6 +193,11 @@ html {
 }
 
 /* Products styling and buying */
+
+.buy-responsive{
+   display: none;
+}
+
 .product {
   height: 100vh;
   position: relative;
@@ -278,7 +298,7 @@ html {
   height: 100vh;
   width: 95vw;
   margin: 2rem;
-  background: url(images/comingsoon.jpeg);
+  background: url(images/comingisoon.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -294,6 +314,8 @@ html {
   color: #fff;
   margin-bottom: 2rem;
   font-weight: 700;
+  position: relative;
+  top: 35%;
 }
 
 .coming-soon-btn {
@@ -306,6 +328,8 @@ html {
   border: 2px solid white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  top: 35%;
 }
 
 .coming-soon-btn:hover {
@@ -323,8 +347,9 @@ html {
   align-items: center;
   justify-content: center;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #F8F0DF;
   color: #111;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
 }
 
 .about-h1 {
@@ -349,7 +374,7 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  background-color: #fff;
+  background-color: #F8F0DF;
 }
 
 .feature {
@@ -415,6 +440,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.footer-menu-title-right{
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #4299E1;
 }
 
 .mail-box-input{
